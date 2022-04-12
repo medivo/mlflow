@@ -56,11 +56,11 @@ class Utils {
     } else if (Math.abs(value) < 1e-3) {
       return value.toExponential(3).toString();
     } else if (Math.abs(value) < 10) {
-      return (Math.round(value * 1000) / 1000).toString();
+      return (Math.round(value * 100000) / 100000).toString();
     } else if (Math.abs(value) < 100) {
-      return (Math.round(value * 100) / 100).toString();
+      return (Math.round(value * 10000) / 10000).toString();
     } else {
-      return (Math.round(value * 10) / 10).toString();
+      return (Math.round(value * 1000) / 1000).toString();
     }
   }
 
